@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 import type { Stack } from "./useStacks";
 
-const backendUrl = import.meta.env.local.VITE_BACKEND_URL || "http://127.0.0.1:8000";
+const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://127.0.0.1:8000";
 
 const API_URL = `${backendUrl}/api/v1/stacks/`;
 

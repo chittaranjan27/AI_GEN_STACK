@@ -28,7 +28,7 @@ export const ChatModal = ({ stackId, isOpen, onClose }: ChatModalProps) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const backendUrl =
-    import.meta.env.local.VITE_BACKEND_URL || "http://127.0.0.1:8000";
+    import.meta.env.VITE_BACKEND_URL || "http://127.0.0.1:8000";
   const handleSendMessage = async () => {
     if (!input.trim()) return;
 
