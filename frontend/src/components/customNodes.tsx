@@ -70,7 +70,7 @@ export const KnowledgeBaseNode = memo(({ data }: NodeProps<NodeData>) => {
   const [fileName, setFileName] = useState<string>("");
   const fileInputRef = useRef<HTMLInputElement>(null);
   const backendUrl =
-    import.meta.env.VITE_BACKEND_URL || "http://127.0.0.1:8000";
+    import.meta.env.local.VITE_BACKEND_URL || "http://127.0.0.1:8000";
 
   const handleFileChange = async (
     event: React.ChangeEvent<HTMLInputElement>
