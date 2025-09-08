@@ -11,8 +11,7 @@ app = FastAPI(title="GenAI Stack API")
 
 origins = [
     "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    os.getenv("FRONTEND_URL")
+    "https://regal-haupia-f9a713.netlify.app/"
 ]
 
 app.add_middleware(
