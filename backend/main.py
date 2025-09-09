@@ -11,6 +11,7 @@ app = FastAPI(title="GenAI Stack API")
 
 origins = [
     "http://localhost:5173",
+    "http://127.0.0.1:5173", 
     "https://melodious-blancmange-675269.netlify.app",
 ]
 
